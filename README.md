@@ -12,7 +12,7 @@ Reasoning is an ongoing challenge in IOT.
 Key ideas:
 Noise reduction, handle noise in ABOX relations but *not* in TBOX relations. This is done by only applying noise handling on *certain* rules and graphs.
 
-# Methadology
+# Methodology
 
 The [Comunica Engine](https://github.com/comunica/comunica) is a "is a meta query engine using which query engines can be created. It does this by providing a set of modules that can be wired together in a flexible manner." [comunica website](https://comunica.dev/about/). Comunica has build in [benchmarking](https://github.com/comunica/comunica#benchmarking) support.
 
