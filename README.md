@@ -14,11 +14,19 @@ Noise reduction, handle noise in ABOX relations but *not* in TBOX relations. Thi
 
 # Methodology
 
-The [Comunica Engine](https://github.com/comunica/comunica) is a "is a meta query engine using which query engines can be created. It does this by providing a set of modules that can be wired together in a flexible manner." [comunica website](https://comunica.dev/about/). Comunica has build in [benchmarking](https://github.com/comunica/comunica#benchmarking) support.
+The [Comunica Engine](https://github.com/comunica/comunica) is a "is a meta query engine using which query engines can be created. It does this by providing a set of modules that can be wired together in a flexible manner." [comunica website](https://comunica.dev/about/). Comunica has built in [benchmarking](https://github.com/comunica/comunica#benchmarking) support.
 
 We are currently working on the development of a [reasoning bus](https://github.com/comunica/comunica-feature-reasoning) for this engine
 
+## Motivation for using Comunica
 
+Comunica is a highly configurable SPARQL query engine that is seeing a growing adoption within the Semantic Web community. Notable projects using this engine include the [solid community server](https://github.com/solid/community-server/blob/main/package.json)
+
+## Key Challenges
+
+## Scalability
+
+### Noise Handling
 
 Full Project Proposal
 
