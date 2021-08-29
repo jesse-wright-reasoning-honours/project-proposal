@@ -81,7 +81,8 @@ Comunica is a highly configurable SPARQL query engine that is seeing a growing a
 
 # Project Outline
 
-*Deadlines in this document are a an internal guideline and should not be treated as a date at which deliverables can be expected*
+*NOTE: Deadlines in this document are a an internal guideline and should not be treated as a date at which deliverables can be expected*
+*NOTE: The priority of stages below may change depending on requirements/data availability of use-case partners*
 
 ## Stage 1 - Interface Development (-15/9/2021)
 
@@ -89,15 +90,15 @@ Interface development - develop a generic bus interface for Reasoners on Comunic
 
 This will be done in the [Comunica Feature Reasoning](https://github.com/comunica/comunica-feature-reasoning) repository.
 
-
-
 ## Stage 2 - Adaption of existing reasoners (15/9/2021-30/11/2021)
 
 *Note: This stage is expected to only take ~1 week of full time work, however, coursework, teaching and work will be my primary focus' during this period*
 
 Many OWL reasoners have been developed, most of which have been implemented in JAVA. These include ELK, HermiT, JFact3, Konclude, Openllet4, and Pellet. In this stage of our work we plan to use [JSweet](https://github.com/cincheo/jsweet) to transpile these reasoning engines into Typescript.
 
+## Stage 3 - Development of a Lazy Reasoner (30/11/2021-15/12/2021)
 
+To the best of our knowledge, there are no reasoners that currently perform *Lazy* reasoning, by inferring only those facts required to answer a given [SPARQL1.1 Query](https://www.w3.org/TR/sparql11-query/)
 
 ## Other Possible Reasearch Directions
 
@@ -105,8 +106,11 @@ Many OWL reasoners have been developed, most of which have been implemented in J
  - Implement reasoners in `C++` and use [`C++` addons](https://nodejs.org/api/addons.html) to invoke these engines from inside a comunica actor.
 
 ### Modularisation of Reasoners
- - For all of the reasoners developed throughout our work (both existing and novel), identify core compoenents (e.g. Rule Filtering, Rule Ordering, and enable custom wiring of these components using an Actor-Bus model with [Components.js](https://componentsjs.readthedocs.io/en/latest/)).
+ - For all of the reasoners developed throughout our work (both existing and novel), identify core compoenents (e.g. Rule Filtering, Rule Ordering, Rule Evaluation etc.) and enable custom wiring of these components using an Actor-Bus model with [Components.js](https://componentsjs.readthedocs.io/en/latest/)).
 
+### Beyond OWL2Reasoning
+ - Implement [stream reasoning](http://streamreasoning.org/slides/2016/10/rsp2016_01_rsp-introduction.pdf) and reasoning on time series data.
+ - Implement [RDF*](https://w3c.github.io/rdf-star/cg-spec/editors_draft.html) Reasoning - we note that such features are blocked [until RDF* is supported by Comunica](https://github.com/comunica/comunica/issues/594).
 
 ## Stage 3
 
