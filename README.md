@@ -93,8 +93,19 @@ This will be done in the [Comunica Feature Reasoning](https://github.com/comunic
 
 ## Stage 2 - Adaption of existing reasoners (15/9/2021-30/11/2021)
 
-*Note: This stage is expected to only take ~1 week of full time work, however, 
+*Note: This stage is expected to only take ~1 week of full time work, however, coursework, teaching and work will be my primary focus' during this period*
 
+Many OWL reasoners have been developed, most of which have been implemented in JAVA. These include ELK, HermiT, JFact3, Konclude, Openllet4, and Pellet. In this stage of our work we plan to use [JSweet](https://github.com/cincheo/jsweet) to transpile these reasoning engines into Typescript.
+
+
+
+## Other Possible Reasearch Directions
+
+### Performance Improvements
+ - Implement reasoners in `C++` and use [`C++` addons](https://nodejs.org/api/addons.html) to invoke these engines from inside a comunica actor.
+
+### Modularisation of Reasoners
+ - For all of the reasoners developed throughout our work (both existing and novel), identify core compoenents (e.g. Rule Filtering, Rule Ordering, and enable custom wiring of these components using an Actor-Bus model with [Components.js](https://componentsjs.readthedocs.io/en/latest/)).
 
 
 ## Stage 3
