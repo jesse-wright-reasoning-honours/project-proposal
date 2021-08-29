@@ -98,7 +98,19 @@ Many OWL reasoners have been developed, most of which have been implemented in J
 
 ## Stage 3 - Development of a Lazy Reasoner (30/11/2021-15/12/2021)
 
-To the best of our knowledge, there are no reasoners that currently perform *Lazy* reasoning, by inferring only those facts required to answer a given [SPARQL1.1 Query](https://www.w3.org/TR/sparql11-query/)
+To the best of our knowledge, there are no reasoners that currently perform *Lazy* reasoning, by inferring only those facts required to answer a given [SPARQL1.1 Query](https://www.w3.org/TR/sparql11-query/). In this stage of our work we intend to adapt the [Core of the Hylar Reasoner](https://github.com/jeswr/hylar-core) to perform lazy reasoning and create a lazy reasoning actor that can be configured with Comunica.
+
+## Stage 4 - Development of Scalable Reasoning Techniques (16/12/2021-15/1/2022)
+
+
+
+## Stage 5 - Development of Noise Resistant Reasoning Techniques (15/1/2022-15/2/2022)
+
+## Stage 6 - Benchmarking (15/2/2022-30/2/2022)
+
+## Stage 7 - Writing Thesis (30/2/2022-15/3/2022)
+
+Completion of honours work, write these summarising experiments and results. Note the deadline won't be until the (6/22)
 
 ## Other Possible Reasearch Directions
 
@@ -106,7 +118,7 @@ To the best of our knowledge, there are no reasoners that currently perform *Laz
  - Implement reasoners in `C++` and use [`C++` addons](https://nodejs.org/api/addons.html) to invoke these engines from inside a comunica actor.
 
 ### Modularisation of Reasoners
- - For all of the reasoners developed throughout our work (both existing and novel), identify core compoenents (e.g. Rule Filtering, Rule Ordering, Rule Evaluation etc.) and enable custom wiring of these components using an Actor-Bus model with [Components.js](https://componentsjs.readthedocs.io/en/latest/)).
+ - For all of the reasoners developed throughout our work (both existing and novel), identify core compoenents (e.g.  Rule Parsing, Rule Filtering, Rule Ordering, Rule Evaluation etc.) and enable custom wiring of these components using an Actor-Bus model with [Components.js](https://componentsjs.readthedocs.io/en/latest/).
 
 ### Beyond OWL2Reasoning
  - Implement [stream reasoning](http://streamreasoning.org/slides/2016/10/rsp2016_01_rsp-introduction.pdf) and reasoning on time series data.
