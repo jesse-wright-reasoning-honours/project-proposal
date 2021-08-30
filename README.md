@@ -1,4 +1,5 @@
-# Scalable RDF Reasoning on the Web - Jesse Wright Honours Proposal
+# Scalable RDF Reasoning on the Web 
+## Jesse Wright Honours Proposal
 
 Reasoning is an ongoing challenge in IOT. From a theoretical perspective, existing reasoning techniques lack scalability; with traditional rule-based inferencing having a computational complexity ranging from polynomial time (e.g. OWL2RL) to exponential time (e.g. OWL2 Direct semantics). From an implementation perspective, few reasoners are written in languages such as Javascript which can be run in the browser; limiting the extent to which web clients can perform reasoning.
 
