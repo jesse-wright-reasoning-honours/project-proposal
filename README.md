@@ -82,7 +82,7 @@ Completion of honours work, write these summarising experiments and results. Not
  - Implement reasoners in `C++` and use [`C++` addons](https://nodejs.org/api/addons.html) to invoke these engines from inside a comunica actor.
 
 #### Modularisation of Reasoners
- - For all of the reasoners developed throughout our work (both existing and novel), identify core compoenents (e.g.  Rule Parsing, Rule Filtering, Rule Ordering, Rule Evaluation etc.) and enable custom wiring of these components using an Actor-Bus model with [Components.js](https://componentsjs.readthedocs.io/en/latest/).
+ - For all of the reasoners developed throughout our work (both existing and novel), identify core compoenents (e.g.  Rule Parsing, Rule Filtering, Rule Ordering, Rule Evaluation etc.) and enable custom wiring of these components using an Actor-Mediator-Bus model with [Components.js](https://componentsjs.readthedocs.io/en/latest/).
 
 #### Beyond OWL2Reasoning
  - Implement [stream reasoning](http://streamreasoning.org/slides/2016/10/rsp2016_01_rsp-introduction.pdf) and reasoning on time series data.
