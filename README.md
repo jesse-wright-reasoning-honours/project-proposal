@@ -82,6 +82,7 @@ Comunica is a highly configurable SPARQL query engine that is seeing a growing a
 # Project Outline
 
 *NOTE: Deadlines in this document are a an internal guideline and should not be treated as a date at which deliverables can be expected*
+
 *NOTE: The priority of stages below may change depending on requirements/data availability of use-case partners*
 
 ## Stage 1 - Interface Development (-15/9/2021)
@@ -95,6 +96,7 @@ This will be done in the [Comunica Feature Reasoning](https://github.com/comunic
 *Note: This stage is expected to only take ~1 week of full time work, however, coursework, teaching and work will be my primary focus' during this period*
 
 Many OWL reasoners have been developed, most of which have been implemented in JAVA. These include ELK, HermiT, JFact3, Konclude, Openllet4, and Pellet. In this stage of our work we plan to use [JSweet](https://github.com/cincheo/jsweet) to transpile these reasoning engines into Typescript.
+From there we shall manually update each codebase to comply with the rdf-js standard.
 
 ## Stage 3 - Development of a Lazy Reasoner (30/11/2021-15/12/2021)
 
@@ -107,6 +109,12 @@ To the best of our knowledge, there are no reasoners that currently perform *Laz
 ## Stage 5 - Development of Noise Resistant Reasoning Techniques (15/1/2022-15/2/2022)
 
 ## Stage 6 - Benchmarking (15/2/2022-30/2/2022)
+
+Perform Benchmarks on 
+
+Whilst the metrics we use may be subject to change the f
+
+ - Evaluation of
 
 ## Stage 7 - Writing Thesis (30/2/2022-15/3/2022)
 
