@@ -1,9 +1,3 @@
-<style>
-.footer {
-  display: none;
-}
-</style>
-
 # Scalable RDF Reasoning on the Web 
 ## Jesse Wright Honours Proposal
 
@@ -149,3 +143,9 @@ Completion of honours work, write these summarising experiments and results. Not
 ### Beyond OWL2Reasoning
  - Implement [stream reasoning](http://streamreasoning.org/slides/2016/10/rsp2016_01_rsp-introduction.pdf) and reasoning on time series data.
  - Implement [RDF\*](https://w3c.github.io/rdf-star/cg-spec/editors_draft.html) Reasoning - we note that such features are blocked [until RDF\* is supported by Comunica](https://github.com/comunica/comunica/issues/594).
+
+<style>
+.footer {
+  display: none;
+}
+</style>
