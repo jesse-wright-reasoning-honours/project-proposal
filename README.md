@@ -1,6 +1,8 @@
 # Scalable RDF Reasoning on the Web 
 ## Jesse Wright Honours Project
 
+🌱 This is an evolving document - which will be updated to reflect our progress over the course of the project.  🌱
+
 ### Background
 
 Reasoning is an ongoing challenge in IOT. From a theoretical perspective, existing reasoning techniques lack scalability; with traditional rule-based inferencing having a computational complexity ranging from polynomial time (e.g. OWL2RL) to exponential time (e.g. OWL2 Direct semantics). From an implementation perspective, few reasoners are written in languages such as Javascript which can be run in the browser; limiting the extent to which web clients can perform reasoning.
@@ -33,30 +35,46 @@ This will be done in the [Comunica Feature Reasoning](https://github.com/comunic
 
 *Note: This stage is expected to only take ~1 week of full time work, however, coursework, teaching and work will be my primary focus' during this period*
 
-Many OWL reasoners have been developed, most of which have been implemented in JAVA. These include ELK, HermiT, JFact3, Konclude, Openllet4, and Pellet. In this stage of our work we plan to use [JSweet](https://github.com/cincheo/jsweet) to transpile these reasoning engines into Typescript.
-From there we shall manually update each codebase to comply with the rdf-js standard.
+Many OWL reasoners have been developed, most of which have been implemented in JAVA. These include ELK, HermiT, JFact3, Konclude, Openllet4, and Pellet. In this stage of our work we plan to use [JSweet](https://github.com/cincheo/jsweet) to transpile these reasoning engines into TypeScript.
+From there we shall manually update each codebase to comply with the [rdf-js](https://rdf.js.org/) standard. Finally we will create a wrapper for each engine so that they can be used as a [reasoning actor](https://github.com/comunica/comunica-feature-reasoning) in Comunica.
 
 #### Stage 3 - Development of a Lazy Reasoner (30/11/2021-15/12/2021)
 
-To the best of our knowledge, there are no reasoners that currently perform *Lazy* reasoning, by inferring only those facts required to answer a given [SPARQL1.1 Query](https://www.w3.org/TR/sparql11-query/). In this stage of our work we intend to adapt the [Core of the Hylar Reasoner](https://github.com/jeswr/hylar-core) to perform lazy reasoning and create a lazy reasoning actor that can be configured with Comunica.
+To the best of our knowledge, there are no reasoners that currently perform *Lazy* reasoning, by inferring only those facts required to answer a given [SPARQL1.1 Query](https://www.w3.org/TR/sparql11-query/). In this stage of our work we intend to adapt the [core of the Hylar Reasoner](https://github.com/jeswr/hylar-core) to perform lazy reasoning and create a lazy reasoning actor that can be configured with Comunica.
 
 #### Stage 4 - Development of Scalable Reasoning Techniques (16/12/2021-15/1/2022)
 
+In this phase of our work, we intend to take the key lessons learned from recent publications such as [Explainable Deep RDFS reasoner](https://arxiv.org/pdf/2002.03514.pdf), [Large Scale Incremental OWL/RDFS Reasoning over Fuzzy RDF Data](https://ieeexplore-ieee-org.virtual.anu.edu.au/stamp/stamp.jsp?tp=&arnumber=7881709) and [Deep Learning for noise-tolerant RDFS reasoning](http://www.semantic-web-journal.net/system/files/swj2186.pdf). Using this, we shall develop novel JS/TS reasoners which use a range of static, heuristic based, and machine learning techniques to evaluate rules. We aim to implement reasoning with an linear (or better) time complexity.
 
+#### Stage 5 - [OPTIONAL] Development of Noise Resistant Reasoning Techniques (15/1/2022-15/2/2022)
 
-#### Stage 5 - Development of Noise Resistant Reasoning Techniques (15/1/2022-15/2/2022)
+Similarly to stage 4, we intend to implement novel JS/TS reasoners, that are resistant to noisy datasets.
 
-#### Stage 6 - Benchmarking (15/2/2022-30/2/2022)
+#### Stage 6 - [OPTIONAL] Development of Reasoning Techniques for streamed & timeseries data (15/1/2022-15/2/2022)
 
-Perform Benchmarks on 
+Similarly to stage 4, we intend to implement novel JS/TS reasoners, that work on streamed and timeseries' data.
 
-Whilst the metrics we use may be subject to change the f
+#### Stage 7 - Benchmarking (15/2/2022-30/2/2022)
 
- - Evaluation of
+Perform benchmarking using existing benchmarks, and possibly new datasets provided by use-case partners.
+
+The key metrics we will be focusing on are
+ - Rule Evaluation Time/Computational Complexity
+ - Rule Evaluation Accuracy
+
+subject to the following changes in variables
+ - Dataset Size
+ - Rule Set (though at this stage we intent to primarily focus on RDFs rules)
+ - Dataset Location (e.g. in-memory, file, online)
+ - Dataset Distribution (i.e. federated across multiple Dataset Location(s))
+
+and for the following purposes
+ - Eager evaluation across the whole dataset
+ - Lazily evaluating a subset of the data to fulfil a specific SPARQL query
 
 #### Stage 7 - Writing Thesis (30/2/2022-15/3/2022)
 
-Completion of honours work, write these summarising experiments and results. Note the deadline won't be until the (6/22)
+Completion of honours work, write these summarising experiments and results. Note the official deadline will not be until the (6/22).
 
 ### Other Possible Reasearch Directions
 
