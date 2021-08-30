@@ -1,3 +1,9 @@
+<style>
+.footer {
+  display: none;
+}
+</style>
+
 # Scalable RDF Reasoning on the Web 
 ## Jesse Wright Honours Proposal
 
