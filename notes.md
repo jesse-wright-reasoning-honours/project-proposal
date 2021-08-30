@@ -1,4 +1,4 @@
-# project-proposal
+<!-- # project-proposal
 
 Reasoning is an ongoing challenge in IOT.
 
@@ -137,4 +137,4 @@ Completion of honours work, write these summarising experiments and results. Not
 Full Project Proposal
 
 
-
+ -->
