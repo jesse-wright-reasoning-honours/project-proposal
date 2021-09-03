@@ -7,7 +7,7 @@
 
 Reasoning is an ongoing challenge in IOT. From a theoretical perspective, existing reasoning techniques lack scalability; with traditional rule-based inferencing having a computational complexity ranging from polynomial time (e.g. OWL2RL) to exponential time (e.g. OWL2 Direct semantics). From an implementation perspective, few reasoners are written in languages such as Javascript which can be run in the browser; limiting the extent to which web clients can perform reasoning.
 
-In this project we shall address these hurdles by implementing and benchmarking a suite of RDF reasoners in [TypeScript](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html). These reasoners will be [rdf-js](https://rdf.js.org/) compliant, and will all have an interface that conforms the the [reasoning bus](https://github.com/comunica/comunica-feature-reasoning) for the [Comunica Engine](https://github.com/comunica/comunica). Moreover, the reasoners we intend to develop - will range from traditional reasoners, to those which use Machine Learning and heuristics to decrease computational complexity of reasoning at the cost of imperfect rule evaluation. 
+In this project we shall address these hurdles by implementing and benchmarking a suite of RDF reasoners in [TypeScript](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html). These reasoners will be [rdf-js](https://rdf.js.org/) compliant, and will all have an interface that conforms to the [reasoning bus](https://github.com/comunica/comunica-feature-reasoning) for the [Comunica Engine](https://github.com/comunica/comunica). Moreover, the reasoners we intend to develop - will range from traditional reasoners, to those which use Machine Learning and heuristics to decrease computational complexity of reasoning at the cost of imperfect rule evaluation. 
 
 The [Comunica Engine](https://github.com/comunica/comunica) is a "is a meta query engine using which query engines can be created. It does this by providing a set of modules that can be wired together in a flexible manner." (cf. [Comunica](https://comunica.dev/about/)). Comunica has built in [benchmarking](https://github.com/comunica/comunica#benchmarking) support. Comunica is seeing a growing adoption within the Semantic Web community, with usage in notable projects including the [solid community server](https://github.com/solid/community-server/blob/main/package.json).
 
@@ -33,7 +33,7 @@ This will be done in the [Comunica Feature Reasoning](https://github.com/comunic
 
 #### Stage 2 - Adaption of existing reasoners (15/9/2021-30/11/2021)
 
-*Note: This stage is expected to only take ~1 week of full time work, however, coursework, teaching and work will be my primary focus' during this period*
+*Note: This stage is expected to only take ~1 week of full time work, however, coursework, teaching and work will be my primary focus during this period*
 
 Many OWL reasoners have been developed, most of which have been implemented in JAVA. These include ELK, HermiT, JFact3, Konclude, Openllet4, and Pellet. In this stage of our work we plan to use [JSweet](https://github.com/cincheo/jsweet) to transpile these reasoning engines into TypeScript.
 From there we shall manually update each codebase to comply with the [rdf-js](https://rdf.js.org/) standard. Finally we will create a wrapper for each engine so that they can be used as a [reasoning actor](https://github.com/comunica/comunica-feature-reasoning) in Comunica.
@@ -42,9 +42,9 @@ From there we shall manually update each codebase to comply with the [rdf-js](ht
 
 To the best of our knowledge, there are no reasoners that currently perform *Lazy* reasoning, by inferring only those facts required to answer a given [SPARQL1.1 Query](https://www.w3.org/TR/sparql11-query/). In this stage of our work we intend to adapt the [core of the Hylar Reasoner](https://github.com/jeswr/hylar-core) to perform lazy reasoning and create a lazy reasoning actor that can be configured with Comunica.
 
-#### Stage 4 - Development of Scalable Reasoning Techniques (16/12/2021-15/1/2022)
+#### Stage 4 - [OPTIONAL] Development of Scalable Reasoning Techniques (16/12/2021-15/1/2022)
 
-In this phase of our work, we intend to take the key lessons learned from recent publications such as [Explainable Deep RDFS reasoner](https://arxiv.org/pdf/2002.03514.pdf), [Large Scale Incremental OWL/RDFS Reasoning over Fuzzy RDF Data](https://ieeexplore-ieee-org.virtual.anu.edu.au/stamp/stamp.jsp?tp=&arnumber=7881709) and [Deep Learning for noise-tolerant RDFS reasoning](http://www.semantic-web-journal.net/system/files/swj2186.pdf). Using this, we shall develop novel JS/TS reasoners which use a range of static, heuristic based, and machine learning techniques to evaluate rules. We aim to implement reasoning with an linear (or better) time complexity.
+In this phase of our work, we intend to take the key lessons learned from recent publications such as [Explainable Deep RDFS reasoner](https://arxiv.org/pdf/2002.03514.pdf), [Large Scale Incremental OWL/RDFS Reasoning over Fuzzy RDF Data](https://ieeexplore-ieee-org.virtual.anu.edu.au/stamp/stamp.jsp?tp=&arnumber=7881709) and [Deep Learning for noise-tolerant RDFS reasoning](http://www.semantic-web-journal.net/system/files/swj2186.pdf). Using this, we shall develop novel JS/TS reasoners which use a range of static, heuristic based, and machine learning techniques to evaluate rules. We aim to implement reasoning with a linear (or better) time complexity.
 
 #### Stage 5 - [OPTIONAL] Development of Noise Resistant Reasoning Techniques (15/1/2022-15/2/2022)
 
@@ -76,13 +76,13 @@ and for the following purposes
 
 Completion of honours work, write these summarising experiments and results. Note the official deadline will not be until the (6/22).
 
-### Other Possible Reasearch Directions
+### Other Possible Research Directions
 
 #### Performance Improvements
  - Implement reasoners in `C++` and use [`C++` addons](https://nodejs.org/api/addons.html) to invoke these engines from inside a comunica actor.
 
 #### Modularisation of Reasoners
- - For all of the reasoners developed throughout our work (both existing and novel), identify core compoenents (e.g.  Rule Parsing, Rule Filtering, Rule Ordering, Rule Evaluation etc.) and enable custom wiring of these components using an Actor-Mediator-Bus model with [Components.js](https://componentsjs.readthedocs.io/en/latest/).
+ - For all of the reasoners developed throughout our work (both existing and novel), identify core components (e.g.  Rule Parsing, Rule Filtering, Rule Ordering, Rule Evaluation etc.) and enable custom wiring of these components using an Actor-Mediator-Bus model with [Components.js](https://componentsjs.readthedocs.io/en/latest/).
 
 #### Beyond OWL2Reasoning
  - Implement [stream reasoning](http://streamreasoning.org/slides/2016/10/rsp2016_01_rsp-introduction.pdf) and reasoning on time series data.
