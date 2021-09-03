@@ -31,6 +31,11 @@ Interface development - develop a generic bus interface for Reasoners on Comunic
 
 This will be done in the [Comunica Feature Reasoning](https://github.com/comunica/comunica-feature-reasoning) repository.
 
+##### Tasks
+
+ - [ ] complete bus-rdf-reason
+ - [ ] complete actor-init-reasoning
+
 #### Stage 2 - Adaption of existing reasoners (15/9/2021-30/11/2021)
 
 *Note: This stage is expected to only take ~1 week of full time work, however, coursework, teaching and work will be my primary focus during this period*
@@ -38,9 +43,34 @@ This will be done in the [Comunica Feature Reasoning](https://github.com/comunic
 Many OWL reasoners have been developed, most of which have been implemented in JAVA. These include ELK, HermiT, JFact3, Konclude, Openllet4, and Pellet. In this stage of our work we plan to use [JSweet](https://github.com/cincheo/jsweet) to transpile these reasoning engines into TypeScript.
 From there we shall manually update each codebase to comply with the [rdf-js](https://rdf.js.org/) standard. Finally we will create a wrapper for each engine so that they can be used as a [reasoning actor](https://github.com/comunica/comunica-feature-reasoning) in Comunica.
 
+
+##### Tasks
+
+ - [ ] Translate reasoners to Typescript
+   - [ ] ELK
+   - [ ] HermiT
+   - [ ] JFact3
+   - [ ] Konclude
+   - [ ] Openllet4
+   - [ ] Pellet
+
+
+ - [ ] Create Comunica actor for reasoners
+   - [ ] ELK
+   - [ ] HermiT
+   - [ ] JFact3
+   - [ ] Konclude
+   - [ ] Openllet4
+   - [ ] Pellet
+
 #### Stage 3 - Development of a Lazy Reasoner (30/11/2021-15/12/2021)
 
 To the best of our knowledge, there are no reasoners that currently perform *Lazy* reasoning, by inferring only those facts required to answer a given [SPARQL1.1 Query](https://www.w3.org/TR/sparql11-query/). In this stage of our work we intend to adapt the [core of the Hylar Reasoner](https://github.com/jeswr/hylar-core) to perform lazy reasoning and create a lazy reasoning actor that can be configured with Comunica.
+
+##### Tasks
+
+ - [ ] Develop Lazy Reasoner
+ - [ ] Create Actor for Lazy Reasoner
 
 #### Stage 4 - [OPTIONAL] Development of Scalable Reasoning Techniques (16/12/2021-15/1/2022)
 
