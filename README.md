@@ -29,7 +29,7 @@ There is a sizeable amount of literature dedicated to the benchmarking of RDF re
 
 Interface development - develop a generic bus interface for Reasoners on Comunica. In this stage we also expect to add the [Core of the Hylar Reasoner](https://github.com/jeswr/hylar-core), as an actor.
 
-This will be done in the [Comunica Feature Reasoning](https://github.com/comunica/comunica-feature-reasoning) repository.
+This will be done in the [Comunica Feature Reasoning](https://github.com/comunica/comunica-feature-reasoning) repository which is publically available under the [MIT LICENSE](https://raw.githubusercontent.com/comunica/comunica-feature-reasoning/master/LICENSE.txt).
 
 ##### Tasks
 
@@ -41,7 +41,7 @@ This will be done in the [Comunica Feature Reasoning](https://github.com/comunic
 *Note: This stage is expected to only take ~1 week of full time work, however, coursework, teaching and work will be my primary focus during this period*
 
 Many OWL reasoners have been developed, most of which have been implemented in JAVA. These include ELK, HermiT, JFact3, Konclude, Openllet4, and Pellet. In this stage of our work we plan to use [JSweet](https://github.com/cincheo/jsweet) to transpile these reasoning engines into TypeScript.
-From there we shall manually update each codebase to comply with the [rdf-js](https://rdf.js.org/) standard. Finally we will create a wrapper for each engine so that they can be used as a [reasoning actor](https://github.com/comunica/comunica-feature-reasoning) in Comunica.
+From there we shall manually update each codebase to comply with the [rdf-js](https://rdf.js.org/) standard. These will be built in the [jesse-wright-reasoning-honours](https://github.com/jesse-wright-reasoning-honours) organisation, in a repository made available under the [MIT License](https://opensource.org/licenses/MIT). Finally we will create a wrapper (under the [MIT LICENSE](https://raw.githubusercontent.com/comunica/comunica-feature-reasoning/master/LICENSE.txt)) for each engine so that they can be used as a [reasoning actor](https://github.com/comunica/comunica-feature-reasoning) in Comunica.
 
 
 ##### Tasks
@@ -65,7 +65,7 @@ From there we shall manually update each codebase to comply with the [rdf-js](ht
 
 #### Stage 3 - Development of a Lazy Reasoner (30/11/2021-15/12/2021)
 
-To the best of our knowledge, there are no reasoners that currently perform *Lazy* reasoning, by inferring only those facts required to answer a given [SPARQL1.1 Query](https://www.w3.org/TR/sparql11-query/). In this stage of our work we intend to adapt the [core of the Hylar Reasoner](https://github.com/jeswr/hylar-core) to perform lazy reasoning and create a lazy reasoning actor that can be configured with Comunica.
+To the best of our knowledge, there are no reasoners that currently perform *Lazy* reasoning, by inferring only those facts required to answer a given [SPARQL1.1 Query](https://www.w3.org/TR/sparql11-query/). In this stage of our work we intend to adapt the [core of the Hylar Reasoner](https://github.com/jeswr/hylar-core) to perform lazy reasoning and create a lazy reasoning actor that can be configured with Comunica. This lazy reasoner will  built in the [jesse-wright-reasoning-honours](https://github.com/jesse-wright-reasoning-honours) organisation, in a repository made available under the [MIT License](https://opensource.org/licenses/MIT).
 
 ##### Tasks
 
@@ -74,15 +74,16 @@ To the best of our knowledge, there are no reasoners that currently perform *Laz
 
 #### Stage 4 - [OPTIONAL] Development of Scalable Reasoning Techniques (16/12/2021-15/1/2022)
 
-In this phase of our work, we intend to take the key lessons learned from recent publications such as [Explainable Deep RDFS reasoner](https://arxiv.org/pdf/2002.03514.pdf), [Large Scale Incremental OWL/RDFS Reasoning over Fuzzy RDF Data](https://ieeexplore-ieee-org.virtual.anu.edu.au/stamp/stamp.jsp?tp=&arnumber=7881709) and [Deep Learning for noise-tolerant RDFS reasoning](http://www.semantic-web-journal.net/system/files/swj2186.pdf). Using this, we shall develop novel JS/TS reasoners which use a range of static, heuristic based, and machine learning techniques to evaluate rules. We aim to implement reasoning with a linear (or better) time complexity.
+In this phase of our work, we intend to take the key lessons learned from recent publications such as [Explainable Deep RDFS reasoner](https://arxiv.org/pdf/2002.03514.pdf), [Large Scale Incremental OWL/RDFS Reasoning over Fuzzy RDF Data](https://ieeexplore-ieee-org.virtual.anu.edu.au/stamp/stamp.jsp?tp=&arnumber=7881709) and [Deep Learning for noise-tolerant RDFS reasoning](http://www.semantic-web-journal.net/system/files/swj2186.pdf). Using this, we shall develop novel JS/TS reasoners which use a range of static, heuristic based, and machine learning techniques to evaluate rules. We aim to implement reasoning with a linear (or better) time complexity. This reasoner will  built in the [jesse-wright-reasoning-honours](https://github.com/jesse-wright-reasoning-honours) organisation, in a repository made available under the [MIT License](https://opensource.org/licenses/MIT).
+
 
 #### Stage 5 - [OPTIONAL] Development of Noise Resistant Reasoning Techniques (15/1/2022-15/2/2022)
 
-Similarly to stage 4, we intend to implement novel JS/TS reasoners, that are resistant to noisy datasets.
+Similarly to stage 4, we intend to implement novel JS/TS reasoners, that are resistant to noisy datasets. This reasoner will  built in the [jesse-wright-reasoning-honours](https://github.com/jesse-wright-reasoning-honours) organisation, in a repository made available under the [MIT License](https://opensource.org/licenses/MIT).
 
 #### Stage 6 - [OPTIONAL] Development of Reasoning Techniques for streamed & timeseries data (15/1/2022-15/2/2022)
 
-Similarly to stage 4, we intend to implement novel JS/TS reasoners, that work on streamed and timeseries' data.
+Similarly to stage 4, we intend to implement novel JS/TS reasoners, that work on streamed and timeseries' data. This reasoner will  built in the [jesse-wright-reasoning-honours](https://github.com/jesse-wright-reasoning-honours) organisation, in a repository made available under the [MIT License](https://opensource.org/licenses/MIT).
 
 #### Stage 7 - Benchmarking (15/2/2022-30/2/2022)
 
