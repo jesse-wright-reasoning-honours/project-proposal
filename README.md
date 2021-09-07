@@ -46,6 +46,14 @@ From there we shall manually update each codebase to comply with the [rdf-js](ht
 
 ##### Tasks
 
+ - [ ] Get Permissions to use existing reasoners in this project
+   - [x] ELK
+   - [ ] HermiT
+   - [ ] JFact3
+   - [ ] Konclude
+   - [ ] Openllet4
+   - [ ] Pellet
+
  - [ ] Translate reasoners to Typescript
    - [ ] ELK
    - [ ] HermiT
@@ -53,7 +61,6 @@ From there we shall manually update each codebase to comply with the [rdf-js](ht
    - [ ] Konclude
    - [ ] Openllet4
    - [ ] Pellet
-
 
  - [ ] Create Comunica actor for reasoners
    - [ ] ELK
@@ -118,6 +125,13 @@ Completion of honours work, write these summarising experiments and results. Not
 #### Beyond OWL2Reasoning
  - Implement [stream reasoning](http://streamreasoning.org/slides/2016/10/rsp2016_01_rsp-introduction.pdf) and reasoning on time series data.
  - Implement [RDF\*](https://w3c.github.io/rdf-star/cg-spec/editors_draft.html) Reasoning - we note that such features are blocked [until RDF\* is supported by Comunica](https://github.com/comunica/comunica/issues/594).
+
+### Outcomes
+
+1. Have a functioning interface for reasoners to "plug in" to the Comunica Engine. This will be done in the Comunica Feature Reasoning repository which is publically available under the MIT LICENSE.
+2. Plug the Hylar Reasoner engine into the Comunica Engine interface and benchmark it. This will be done in the Comunica Feature Reasoning repository which is publically available under the MIT LICENSE.
+3. Use JSweet to translate the reasoning engines ELK, HermiT, JFact3, Konclude, Openllet4, and Pellet (which have been written in Java) into Typescript. These will be built in the jesse-wright-reasoning-honours organisation, in a repository made available under the MIT License. Create a wrapper in the Comunica Feature Reasoning repository (under the MIT LICENSE) for each engine so that they can be used as a reasoning actor in Comunica. Benchmark each of these reasoners.
+4. Adapt the Hylar Reasoner engine to perform Lazy Reasoning. This will be built in the jesse-wright-reasoning-honours organisation, in a repository made available under the MIT License.
 
 <style>
 .footer {
