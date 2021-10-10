@@ -48,8 +48,9 @@ From there we shall manually update each codebase to comply with the [rdf-js](ht
 
  - [ ] Get Permissions to use existing reasoners in this project
    - [x] ELK
-   - [ ] HermiT
-   - [ ] JFact3
+   - [x] HermiT
+   - [x] JFact3
+   - [x] JFact5
    - [ ] Konclude
    - [ ] Openllet4
    - [ ] Pellet
@@ -58,6 +59,7 @@ From there we shall manually update each codebase to comply with the [rdf-js](ht
    - [ ] ELK
    - [ ] HermiT
    - [ ] JFact3
+   - [ ] JFact5
    - [ ] Konclude
    - [ ] Openllet4
    - [ ] Pellet
@@ -66,6 +68,7 @@ From there we shall manually update each codebase to comply with the [rdf-js](ht
    - [ ] ELK
    - [ ] HermiT
    - [ ] JFact3
+   - [ ] JFact5
    - [ ] Konclude
    - [ ] Openllet4
    - [ ] Pellet
