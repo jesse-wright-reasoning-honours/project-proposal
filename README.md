@@ -3,6 +3,8 @@
 
 🌱 This is an evolving document - which will be updated to reflect our progress over the course of the project.  🌱
 
+Here is a [link 🔗](https://github.com/jesse-wright-reasoning-honours) to the organisation in which most of this work will be performed - we will make more repos public over the course of the project.
+
 ### Background
 
 Reasoning is an ongoing challenge in IOT. From a theoretical perspective, existing reasoning techniques lack scalability; with traditional rule-based inferencing having a computational complexity ranging from polynomial time (e.g. OWL2RL) to exponential time (e.g. OWL2 Direct semantics). From an implementation perspective, few reasoners are written in languages such as Javascript which can be run in the browser; limiting the extent to which web clients can perform reasoning.
@@ -25,7 +27,7 @@ There is a sizeable amount of literature dedicated to the benchmarking of RDF re
 
 *NOTE: The priority of stages below may change depending on requirements/data availability of use-case partners*
 
-#### Stage 1 - Interface Development (30/8/2021-15/9/2021)
+#### Stage 1 - Interface Development (30/8/2021-15/9/2021) **Delayed until late November**
 
 Interface development - develop a generic bus interface for Reasoners on Comunica. In this stage we also expect to add the [Core of the Hylar Reasoner](https://github.com/jeswr/hylar-core), as an actor.
 
